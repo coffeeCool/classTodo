@@ -1,8 +1,22 @@
 {
+  "name": "classTodo",
+  "version": "0.0.0",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "build": "rollup -c",
+    "rebuild": "npm run clean; npm run build",
+    "test": "npm run rebuild; ./test/index.coffee",
+    "postinstall": "npm run build"
+  },
   "dependencies": {
     "axios": "^0.17.1",
+    "cfx.rollup-plugin-coffee2": "^0.1.0",
     "coffee-require": "^0.0.3",
     "ddeyes": "^0.0.4",
+    "rollup": "^0.51.5",
+    "rollup-plugin-alias": "^1.4.0",
+    "rollup-plugin-cleanup": "^2.0.0",
     "shelljs": "^0.7.8"
   }
 }

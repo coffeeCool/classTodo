@@ -5,7 +5,7 @@ import {
   LC_getClassOneTodo
   LC_updateClassTodo
   LC_deleteClassTodo
-} from '../src/service'
+} from '../src/index'
 
 config =
   headers:
