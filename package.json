@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "axios": "^0.17.1",
+    "coffee-require": "^0.0.3",
+    "ddeyes": "^0.0.4",
+    "shelljs": "^0.7.8"
+  }
+}
