@@ -5,7 +5,7 @@ LC_createClass = (data) ->
   toolFuc(
     'POST'
     data.headers
-    "#{data.uri}/#{data.className}?fetchWhenSave=true"
+    data.uri
     data.data
   )
 
@@ -13,15 +13,14 @@ LC_getClassOneTodo = (data) ->
   toolFuc(
     'GET'
     data.headers
-    "#{data.uri}/#{data.className}/#{data.data.objectId}"
-    data.data
+    data.uri
   )
 
 LC_updateClassTodo = (data) ->
   toolFuc(
     'PUT'
     data.headers
-    "#{data.uri}/#{data.className}/#{data.data.objectId}?fetchWhenSave=true"
+    data.uri
     data.data
   )
 
@@ -29,8 +28,7 @@ LC_deleteClassTodo = (data) ->
   toolFuc(
     'DELETE'
     data.headers
-    "#{data.uri}/#{data.className}/#{data.data.objectId}"
-    data.data.objectId
+    data.uri
   )
 
 export {

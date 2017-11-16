@@ -1,7 +1,7 @@
 import axios from 'axios'
 import dd from 'ddeyes'
 
-export default toolFuc = (method, headers, uri, data) ->
+export default toolFuc = (method, headers, uri, data='') ->
   axios
     method: method
     headers: headers
